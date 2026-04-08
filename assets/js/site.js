@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (mobileToggle && mobileLinks) {
     mobileToggle.addEventListener("click", function () {
-      mobileLinks.classList.toggle("is-open");
+      mobileLinks.classList.toggle("open");
+      mobileToggle.setAttribute(
+        "aria-expanded",
+        mobileLinks.classList.contains("open") ? "true" : "false"
+      );
     });
   }
 
