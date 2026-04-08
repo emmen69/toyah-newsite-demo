@@ -47,3 +47,8 @@ section.block{display:grid;grid-template-columns:220px 1fr;gap:var(--gap);margin
 .hero-overlay{
   pointer-events: none;
 }
+
+.hero-overlay a,
+.hero-overlay button{
+  pointer-events: auto;
+}
